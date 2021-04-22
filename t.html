@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAKE NEWS CLASSIFIER</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <header>
+    <div class="wrapper">
+        <div class="logo">
+           <img src="https://freesvg.org/img/Fake-Real-Black.png" alt="">
+           <img src="https://freesvg.org/img/Real-Fake.png" alt="">
+           
+           </div>
+
+</div>
+<main class="site__main">
+<div>
+    <p>
+    <marquee behavior="alternate" direction="right">
+        The <span>NAME</span> you know, the <span>NEWS</span> you get!...The <span>NAME</span> you know, the <span>NEWS</span> you get!...The <span>NAME</span> you know, the <span>NEWS</span> you get!
+    </marquee> 
+</p>
+</div> 
+</main>
+
+<div class="welcome-text">
+    <h1>
+FAKE NEWS <span>CLASSIFIER</span></h1>
+<span>
+<form action="{{ url_for('predict')}}"method="post">
+    <div class="form-box">
+    <input type="text" class="search-news news" name="news" placeholder="Enter the news url" required="required" />
+  <span><button type="submit" class="btn btn-primary btn-block btn-large">Predict</button></span> 
+</div>
+</form>
+</span>
+    </div>
+</header>
+
+</body>
+</html>
