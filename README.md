@@ -1,4 +1,4 @@
-# Checkout the app on this [link](https://ravi-finds-fake-news.herokuapp.com)
+
 <img src="images/app.png">
 
 # Introduction
